@@ -58,7 +58,7 @@ btnHold.addEventListener('click', function () {
             totalScoreP1 += Number(currentScoreP1.textContent);
             totalScoreTextP1.textContent = totalScoreP1;
             switchPlayer(player1, player2);
-            if (totalScoreP1 >= 10) {
+            if (totalScoreP1 >= 100) {
                 // winner = 1;
                 player1.classList.add('player--winner');
                 nameP1.textContent += ' Wins!';
@@ -70,7 +70,7 @@ btnHold.addEventListener('click', function () {
             totalScoreP2 += Number(currentScoreP2.textContent);
             totalScoreTextP2.textContent = totalScoreP2;
             switchPlayer(player2, player1);
-            if (totalScoreP2 >= 10) {
+            if (totalScoreP2 >= 100) {
                 // winner = 2;
                 player2.classList.add('player--winner');
                 nameP2.textContent += ' Wins!';
